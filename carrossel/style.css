@@ -1,0 +1,127 @@
+/*Estilização universal da página*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #2e3645;
+    color: #ffffff;
+}
+
+body, input, button{
+    font: 400 1rem "Poppins", sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+button{
+    cursor: pointer;
+}
+
+/*Estilização do carrossel*/
+
+#content{
+    width:65vw;
+    margin: 2rem auto 0;
+}
+
+#content h1{
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+#box-content{
+    position: relative;
+    width: 100%;
+}
+
+#carousel{
+    position: relative;
+    width: 80%;
+    height: 75vh;
+    margin: 0 auto;
+}
+
+.slide{
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    border-radius: 0.80rem;
+    transition: 1800ms opacity;
+    overflow: hidden;
+}
+
+.slide img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+
+.slide[data-active]{
+    opacity: 1;
+}
+
+.carousel-button{
+    position: absolute;
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.99);
+    z-index: 10;
+    font-size: 1.30rem;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 1.30rem;
+    transition: 1800ms;
+    border-radius: 0.6rem;
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+.carousel-button:hover, .carousel-button:focus{
+    color: rgba(255, 255, 255, 0.99);
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+.carousel-button.next{
+    right: 0.6rem;
+}
+
+.carousel-button.prev{
+    left: 0.6rem;
+}
+
+.subtitle{
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.135rem;
+    font-weight: 295;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+    border-width: 0;
+    white-space: nowrap;
+}
+
+.subtitle[data-subtitle-active]{
+    position: initial;
+    padding: initial;
+    width: initial;
+    height: initial;
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+    right: 1rem;
+    bottom: 1rem;
+    position: absolute;
+}

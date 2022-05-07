@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Fonte: Poppins. GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Prova A1 - Carrossel de Imagens - Usabilidade</title>
+</head>
+<body>
+    <section id="content">
+        <h1>Carrossel de Imagens</h1>
+        <div id="box-content">
+            <button class="carousel-button prev" data-carousel-button="prev">&#8656</button>
+            <button class="carousel-button next" data-carousel-button="next">&#8658</button>
+            <div id="carousel" data-carousel>
+                <ul data-slides>
+                    <li class="slide" data-active><img src="https://images.unsplash.com/photo-1594530770460-89b1962c46e5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Gato branco com olhos azuis"></li>
+                    <li class="slide"><img src="https://images.unsplash.com/photo-1518887371124-412923b6ccff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Cachorro mostrando a língua"></li>
+                    <li class="slide"><img src="https://64.media.tumblr.com/d51dad6ccb1d84367d57bf2c8d6de06a/tumblr_mpwr8wAPct1sxj7q9o1_540.jpg" alt="Animais desenvolvidos em laboratório por alunos do EAD da UniNove"></li>
+                </ul>
+            </div>
+        </div>
+        <p class="subtitle" data-subtitle-active>Gato de pelos brancos e olhos azuis</p>
+        <p class="subtitle">Cachorro mostrando a língua</p>
+        <p class="subtitle">Animais desenvolvidos em laboratório por alunos do EAD</p>
+    </section>
+    <a href="https://github.com/brennoalcantara"><img src="github.svg" alt="GitHub">GitHub</a>
+</body>
+</html>
